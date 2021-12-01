@@ -16,6 +16,10 @@
     <li>npm install express-session</li>
 </ul>
 
-## Vous devrez dans database.js vous connecter à votre base de donnée grace à votre URL dans connect.mongoose().
+## Vous devrez dans database.js vous connecter à votre base de donnée grace à votre URL dans connect.mongoose(), vous pouvez également créer un .env pour y rentrer votre url de manière caché il vous faudra donc installer dotenv avec la command : 
+
+<p>npm install dotenv</p>
+
+## si vous n'utilisez pas dotenv vous devrez commenter le require('dotenv') dans le fichier database.js ainsi que app.js.
 
 ### une fois le projet clone et les packages installé vous pourrez lancer le projet avec npm start
