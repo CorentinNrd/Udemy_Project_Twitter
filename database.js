@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+require('dotenv').config()
 
 class Database {
 
@@ -7,8 +8,9 @@ class Database {
     }
 
     async connect() {
+        var env = process.env.MONGO_URL;
         try {
-            await mongoose.connect("mongodb+srv://Corentin:Roucmout79@twitterclonecluster.vaeyf.mongodb.net/TwitterCloneDB?retryWrites=true&w=majority",
+            await mongoose.connect(env,
                 { useNewUrlParser: true },
                 { useUnifiedTopolofy: true },
                 { useFindAndModify: false });
