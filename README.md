@@ -14,6 +14,7 @@
     <li>npm install mongoose</li>
     <li>npm install bcrypt</li>
     <li>npm install express-session</li>
+    <li>npm install multer</li>
 </ul>
 
 ## Vous devrez dans database.js vous connecter à votre base de donnée grace à votre URL dans connect.mongoose(), vous pouvez également créer un .env pour y rentrer votre url de manière caché il vous faudra donc installer dotenv avec la command : 
